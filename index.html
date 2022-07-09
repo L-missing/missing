@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>思念的主页</title>
     <script src="./js/index.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -29,9 +31,12 @@
             <button class="button_daohang" onclick="window.open('https://www.douyin.com/');">抖音</button>
             <button class="button_daohang" onclick="window.open('https://www.huya.com/');">虎牙</button>
         </div>
+        <div class="slogan">
+            <p id="slogan2" class="slogan2" onclick="loadYiYan()"></p>
+        </div>
     </div>
-    <div class="slogan">
-        <p id="slogan2" class="slogan2" onclick="loadYiYan()"></p>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <!-- <div class="bigbox">
         <input type="checkbox" id="checkbox">
@@ -48,6 +53,10 @@
         </ul>
     </div> -->
 </body>
-<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+<script>
+    $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut()
+    });
+</script>
 
 </html>
