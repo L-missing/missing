@@ -7,7 +7,6 @@ body {
 }
 
 .main {
-
     width: 100%;
     position: absolute;
     left: 50%;
@@ -50,6 +49,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     transition: all 0.5s;
     text-align: center;
+    display: inline-block;
 }
 
 .slogan {
