@@ -34,14 +34,14 @@ function loadYiYan() {
 function search2(key) {
     var e = key || window.event;
     if (e && e.keyCode == 13) {
-        window.open("https://cn.bing.com/search?q=" + document.getElementById('input_search').value);
+        window.open("https://www.baidu.com/s?wd=" + document.getElementById('input_search').value);
     } else {
 
     }
 }
 
 function search() {
-    window.open("https://cn.bing.com/search?q=" + document.getElementById('input_search').value);
+    window.open("https://www.baidu.com/s?wd=" + document.getElementById('input_search').value);
 }
 
 
