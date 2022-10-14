@@ -68,3 +68,15 @@ WIDGET = {
         "key": "f14c6e587d0f4b89957b1d852ef433c4"
     }
 }
+
+function showdiv() {
+    document.getElementById("show").style.display = "block";
+    document.getElementById('strHref').innerHTML = "收起";
+    document.getElementById('strHref').href = "javascript:hidediv();";
+}
+
+function hidediv() {
+    document.getElementById('show').style.display = 'none';
+    document.getElementById('strHref').innerHTML = "展开";
+    document.getElementById('strHref').href = "javascript:showdiv();";
+}
